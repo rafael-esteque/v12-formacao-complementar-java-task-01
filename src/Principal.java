@@ -5,12 +5,12 @@ public class Principal {
 
         Endereco endereco1Rafael = new Endereco(1, "Rua ABC", 123, "Apto 456", "12345-671", "São Paulo", "SP", "Brasil");
         Contato contato1Rafael = new Contato("rafael@mail", "123456789", 1);
-        Endereco endereco2Rafael = new Endereco(1, "Rua ABC2", 1232, "Apto 4562", "12345-671", "São Paulo", "SP", "Brasil");
+        Endereco endereco2Rafael = new Endereco(2, "Rua ABC2", 1232, "Apto 4562", "12345-671", "São Paulo", "SP", "Brasil");
         Contato contato2Rafael = new Contato("rafael2@mail", "223456789", 2);
 
         Endereco endereco1Mayra = new Endereco(1, "Rua DEF", 456, "Apto 789", "54321-871", "Porto Alegre", "RS", "Brasil");
         Contato contato1Mayra = new Contato("mayra@mail", "987654321", 1);
-        Endereco endereco2Mayra = new Endereco(1, "Rua DEF2", 4562, "Apto 7892", "54321-871", "Porto Alegre", "RS", "Brasil");
+        Endereco endereco2Mayra = new Endereco(2, "Rua DEF2", 4562, "Apto 7892", "54321-871", "Porto Alegre", "RS", "Brasil");
         Contato contato2Mayra = new Contato("mayra2@mail", "287654321", 2);
 
         Contato[] contatosRafael = {contato1Rafael, contato2Rafael};
@@ -88,10 +88,16 @@ public class Principal {
 
                 case 4:
                     // Sair
-                    System.out.println("\nAtendimento encerrado.");
+                    System.out.println("\n ********************* \nATENDIMENTO ENCERRADO \n *********************");
+                    System.out.println();
                     // Imprime os dados completos da conta
-                    System.out.println("Dados da conta:");
+                    System.out.println("DADOS DA CONTA:");
+                    System.out.println();
                     contaCorrenteAtual.imprimirContaCorrente();
+                    System.out.println();
+                    contaCorrenteAtual.cliente.imprimirEnderecos();
+                    System.out.println();
+                    contaCorrenteAtual.cliente.imprimirContatos();
                     scanner.close();
                     System.exit(0);
 

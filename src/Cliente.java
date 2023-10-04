@@ -12,13 +12,13 @@ public class Cliente {
     }
 
     public void imprimirContatos() {
-        System.out.println("Contatos do Cliente " + nome + ":");
+        System.out.println("CONTATOS DE " + nome + ":");
 
         // Verifica se há contatos
         if (contatos != null) {
             for (Contato contato : contatos) {
-                contato.imprimirContato();
                 System.out.println(); // Adiciona uma linha em branco entre os contatos
+                contato.imprimirContato();
             }
         } else {
             System.out.println("Nenhum contato disponível.");
@@ -26,12 +26,12 @@ public class Cliente {
     };
 
     public void imprimirEnderecos() {
-        System.out.println("Endereços do Cliente " + nome + ":");
+        System.out.println("ENDEREÇOS DE " + nome + ":");
 
         if (enderecos != null) {
             for (Endereco endereco : enderecos) {
+                System.out.println(); // Adiciona uma linha em branco entre os endereços
                 endereco.imprimeEndereco();
-                System.out.println();
             }
         } else {
             System.out.println("Nenhum endereço disponível.");

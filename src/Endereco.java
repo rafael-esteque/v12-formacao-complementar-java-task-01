@@ -21,12 +21,12 @@ public class Endereco {
 
     public void imprimeEndereco() {
         System.out.println("Tipo: " + tipo);
-        System.out.println("Logradouro: " + tipo);
-        System.out.println("Número: " + tipo);
-        System.out.println("Complemento: " + tipo);
-        System.out.println("CEP: " + tipo);
-        System.out.println("Cidade: " + tipo);
-        System.out.println("UF: " + tipo);
-        System.out.println("País: " + tipo);
+        System.out.println("Logradouro: " + logradouro);
+        System.out.println("Número: " + numero);
+        System.out.println("Complemento: " + complemento);
+        System.out.println("CEP: " + cep);
+        System.out.println("Cidade: " + cidade);
+        System.out.println("UF: " + estado);
+        System.out.println("País: " + pais);
     }
 }
